@@ -5,8 +5,8 @@ public class deliverable_two_UnicodeCalculator {
 	public static void main(String[] args) {
 
 		Scanner scnr = new Scanner(System.in);
-		String firstString = "Grand";
-		String secondString = "Circus";
+		String firstString = scnr.nextLine();
+		String secondString = scnr.nextLine();
 		int sumOfFirstString = 0;
 		int sumOfSecondString = 0;
 		int absoluteValue;
@@ -32,7 +32,6 @@ public class deliverable_two_UnicodeCalculator {
 				sumOfSecondString += secondString.charAt(i1) - 0;
 			}
 		}
-
 		if (sumOfFirstString > sumOfSecondString) {
 			absoluteValue = (sumOfFirstString - sumOfSecondString);
 		} else
