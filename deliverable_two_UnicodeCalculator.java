@@ -32,6 +32,12 @@ public class deliverable_two_UnicodeCalculator {
 				sumOfSecondString += secondString.charAt(i1) - 0;
 			}
 		}
-		System.out.println("Difference (as absolute value): " + (sumOfFirstString + sumOfSecondString));
+
+		if (sumOfFirstString > sumOfSecondString) {
+			absoluteValue = (sumOfFirstString - sumOfSecondString);
+		} else
+			absoluteValue = (sumOfSecondString - sumOfFirstString);
+
+		System.out.println("Difference (as absolute value): " + (absoluteValue));
 	}
 }
